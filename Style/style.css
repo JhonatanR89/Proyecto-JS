@@ -1,0 +1,348 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.title h1 {
+  justify-content: center;
+  text-align: center;
+}
+.btn_c {
+  margin: 30px;
+  padding: 30px;
+  height: 50px;
+  width: 40%;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 hsl(216, 89%, 22%);
+  color: #fff;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+}
+
+.btn_c:hover{
+  box-shadow: inset 50px 0 50px 0 hsl(210, 100%, 2%);
+  
+}
+
+
+
+
+.formulario {
+  margin: 30px;
+  padding: 30px;
+}
+
+.imagenlogo {
+  height: 200px;
+  width: 200px;
+  padding: 50px;
+  
+}
+
+.card_uno{
+  overflow-y: auto;
+  width: 40rem;
+  height: 25rem;
+
+}
+.logos{
+  display: flex;
+  flex-direction: row;
+}
+.banner{
+  
+  text-align: center;
+}
+.banner img{
+  width:110rem;
+  height: 20rem;
+  margin: 30px;
+  
+}
+
+
+
+
+
+/* ---------------------------------------modo obscuro------------------------------------ */
+
+
+.darkMode{
+  background-color: #141418;
+  color: #DCE8F0;
+  
+}
+.darkMode .card_uno{
+  background-color: #58585e;
+  color: #DCE8F0;
+
+}
+
+.darkMode .btn{
+  background-color: #DCE8F0;
+  color: #020202;
+}
+.darkMode .card_uno .table{
+  color: #f0f5f8;
+}
+
+.darkMode .footer{
+  background-color: #fff;
+}
+
+
+/* //-------------------------------- estilos pagina agendamiento ---------------------- */
+
+:root{
+  --color-bg-calendario: #2c3e50;
+  --color-cell: #fff;
+  --color-cell-disable: #95a5a6;
+ 
+}
+
+.root{
+min-height: 100vh;
+padding: 0 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+
+}
+
+.calendario{
+  padding: 20px 10px;
+  background-color: var(--color-bg-calendario);
+  border-radius:  5px;
+  width: 100%;
+  max-width: 300px;
+  font-family: sans-serif;
+}
+.calendarioHeader{
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.calendario .control{
+  color: rgb(5, 0, 0);
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+
+
+.control__next{
+  margin-left: auto;
+}
+.control__prev{
+  margin-right: auto;
+}
+
+
+.bodyCalendario{
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+}
+.calendar__item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.grid__header, .grid__body{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.grid__header{
+  color: #fff;
+  margin-bottom: 20px
+  ;
+}
+.grid__cell{
+  color: #fff;
+  margin-bottom: 0px
+  ;
+}
+
+
+.grid__body{
+  grid-auto-rows: 40px;
+  color: var(--color-cell);
+}
+.grid__cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+.grid__cel--gd{
+  cursor: pointer;
+}
+.grid__cel--gd:hover{
+  background-color: rgba(255, 255, 255, 0.123);
+  border-radius: 50%;
+}
+
+.grid__cel--selected{
+  color: var(--color-bg-calendario);
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--color-bg-calendario) inset;
+}
+
+.grid__cel--disable{
+  color: var(--color-cell-disable);
+  cursor: not-allowed;
+
+}
+
+
+/* ------------------------------------------estilos horarios-------------------------------------- */
+
+h3{
+  text-align: center;
+}
+.btn__hora{
+  display: none;
+  
+}
+
+.table__Hora{
+  background-color: var(--color-cell);
+  color: var(--color-bg-calendario);
+}
+
+.btn__bc{
+  margin: 15px;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 15px;
+  letter-spacing: 5px;
+  height: 50px;
+  width:10%;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 hsl(216, 98%, 19%);
+  color: #fff;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  
+}
+.btn__bc:hover{
+  box-shadow: inset 00px 0 50px 0 hsl(210, 100%, 0%);
+}
+
+.modal_uno{
+  background-color: var();
+  font-family: sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  opacity: 1;
+  justify-content: center;
+  overflow: auto;
+  pointer-events: none;
+  height: 40em;
+  width: 60em;
+  
+}
+ 
+.modal_dos{
+  background-color: var();
+  font-family: sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  opacity: 1;
+  justify-content: center;
+  overflow: auto;
+  pointer-events: none;
+  height: 20em;
+  width: 30em;
+  
+}
+
+.modal_tres{
+  font-family: sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  height: 20em;
+  width: 30em;
+  
+}
+
+.modal-body{
+  background-color: var(--color-cell);
+  height: 20em;
+  width: 30em;
+  max-width: 80%;
+  overflow: auto;
+  position: absolute;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0 , 0,2);
+}
+
+.modal {
+  overflow: auto;
+  width: 400px;
+  height: 400px;
+  transition: transform 1s;
+  transform: translateY(0%)
+}
+
+.formDatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 20px;
+}
+.contenedor__agenda{
+  background: url(../IMAGENES/fondo_agenda.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* /-------------------------------------- estilos citas------------------------/ */
+
+.contenedor__citas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../IMAGENES/fondo_citas.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 4/3;
+  
+}
+
+.tablaCitas{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+
+}
+
+.font-weight-bolder{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer{
+  background-color: #fff;
+  margin-bottom: 5px; 
+}
